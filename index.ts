@@ -4,12 +4,12 @@ const yoga = createYoga({
   schema: createSchema({
     typeDefs: /* GraphQL */ `
       type Query {
-        greetings: String
+        hello: String
       }
     `,
     resolvers: {
       Query: {
-        greetings: () => 'Hello from Yoga in a Bun app!',
+        hello: () => 'Hello World!',
       },
     },
   }),
